@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Professional Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for interactive map -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">TeamPro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#map">Map</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Our Team</h1>
+                <p>Building amazing things together</p>
+                <a href="#team" class="cta-button">Meet Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our Team</h2>
+            <p>We are a passionate group of professionals dedicated to excellence and innovation. Our diverse background and complementary skills enable us to tackle complex challenges and deliver exceptional results.</p>
+            <div class="values">
+                <div class="value-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Constantly seeking new and better solutions</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Collaboration</h3>
+                    <p>Working together to achieve common goals</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-target"></i>
+                    <h3>Excellence</h3>
+                    <p>Striving for the highest quality in everything</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>John Smith</h3>
+                    <p class="role">Lead Developer</p>
+                    <p class="bio">Full-stack developer with 8+ years of experience in building scalable applications.</p>
+                    <div class="member-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Sarah Johnson</h3>
+                    <p class="role">Product Manager</p>
+                    <p class="bio">Strategic thinker focused on delivering user-centric products that make an impact.</p>
+                    <div class="member-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Michael Chen</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <p class="bio">Creative designer passionate about crafting beautiful and intuitive user experiences.</p>
+                    <div class="member-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Emily Rodriguez</h3>
+                    <p class="role">Data Analyst</p>
+                    <p class="bio">Data-driven professional transforming complex datasets into actionable insights.</p>
+                    <div class="member-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <p>Visit us at our office in San Francisco</p>
+            <div id="team-map" class="map-container"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have questions or want to collaborate? We'd love to hear from you!</p>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:team@example.com">team@example.com</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>San Francisco, CA</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h4>Website</h4>
+                        <p><a href="https://example.com">www.example.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Our Team. All rights reserved. | Built with <i class="fas fa-heart"></i> using GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
